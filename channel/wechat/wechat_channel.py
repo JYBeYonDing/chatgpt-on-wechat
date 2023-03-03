@@ -142,7 +142,7 @@ class WechatChannel(Channel):
         if not query:
             return
         context = dict()
-        context['from_user_id'] = msg['ActualUserName']
+        context['from_user_id'] = msg['User']['UserName'] + msg['ActualUserName']
         reply_text = super().build_reply_content(query, context)
         if reply_text:
             reply_text = '@' + msg['ActualNickName'] + ' ' + reply_text.strip()
