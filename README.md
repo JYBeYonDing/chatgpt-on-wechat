@@ -163,3 +163,9 @@ FAQs： <https://github.com/zhayujie/chatgpt-on-wechat/wiki/FAQs>
 欢迎提交PR、Issues，以及Star支持一下。程序运行遇到问题优先查看 [常见问题列表](https://github.com/zhayujie/chatgpt-on-wechat/wiki/FAQs) ，其次前往 [Issues](https://github.com/zhayujie/chatgpt-on-wechat/issues) 中搜索，若无相似问题可创建Issue，或加微信 eijuyahz 交流。
 
  
+## chatgpt注意：
+- gpt是一个语言模型，通过大数据训练，所以答案不一定完全准确，但有一定参考意义
+- 在微信群中，目前是针对每一个艾特他的人维护一个会话上下文，无法实现综合理解多个人的上下文做出回答
+- 在同一个会话上下文中如果token数超过4096（上下文太长了，理解不过来了），会提示：重新提问
+- openApi的调用接口有限流，对于试用用户，在chat模型中目前的限流是20RPM/40000TPM
+  - 简单理解是1分钟最多问20个问题，超过限流会延迟5s后重试，还是超会提示：提问太快
