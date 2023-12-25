@@ -1,0 +1,38 @@
+{
+  "channel_type": "wxy",
+  "open_ai_api_key": "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",
+  "proxy": "http://127.0.0.1:7890",
+  "open_ai_api_key_group": {
+    "ChatGPT测试群": "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",
+    "ChatGPT": "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"
+  },
+  "wechaty_puppet_service_token": "puppet_padlocal_82a3256e7e614da4bf2ef657668e677d",
+  "single_chat_prefix": [
+    "bot",
+    "@bot",
+    "小C",
+    "小c",
+    ""
+  ],
+  "single_chat_reply_prefix": "",
+  "group_chat_prefix": [
+    "@bot"
+  ],
+  "group_name_white_list": [
+    "ALL_GROUP"
+  ],
+  "group_chat_in_one_session": ["ALL_GROUP"],
+  "image_create_prefix": [
+    "画",
+    "看",
+    "找"
+  ],
+  "conversation_max_tokens": 1000,
+  "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",
+  "speech_recognition": false,
+  "expires_in_seconds": 3600,
+  "group_speech_recognition": false,
+  "voice_reply_voice": false,
+  "subscribe_msg": "感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。"
+
+}
